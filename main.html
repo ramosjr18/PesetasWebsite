@@ -11,36 +11,68 @@
 
 <body>
 
-    <div class="nav">
-
-        <nav>
-            <div class="logo">
-                <img src="assets\img\logodepesetas.png" style="margin-right: 180px;" alt="Logo de Pesetas"
-                    width="130" />
-            </div>
-            <div class="list_nav">
-                <ul>
-                    <li><a href="#Aktuelles">Aktuelles</a></li>
-                    <li><a href="#Kontakt">Kontakt</a></li>
-                    <li><a href="">Lage</a></li>
-                    <li><a href="#Bilder">Bilder</a></li>
-                    <li><a href="#Reservierung">Reservierung</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
 
     <div class="willkommen">
-
         <div class="contentwill">
+            <div class="nav">
+                <nav>
+                    <div class="list_nav">
+                        <ul>
+                            <li><a href="#Kontakt">Kontakt</a></li>
+                            <li><a href="">Lage</a></li>
+                            <li><a href="#Bilder">Bilder</a></li>
+                            <li><a href="#Reservierung">Reservierung</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
             <h1>Herzlich Willkommen im Pesetas</h1>
 
+            <div class="logo">
+                <img src="assets\img\logodepesetas.png" alt="Logo de Pesetas" width="500" />
+            </div>
             <p>Tauchen Sie ein in ein kleines Stück Spanien in Berlin </p>
 
-            <button>Speise und GeträakeKarte</button>
-            <button>Catering Angebot</button>
+            <button class="button type3">Speise und Getränkekarte</button>
+            <button class="button type3">Catering Angebot</button>
         </div>
 
+    </div>
+
+    <div class="about">
+
+        <div class="imgabout">
+            <img src="assets/img/IMG_20221029_190215.jpg" alt="Pesetas Restaurant">
+        </div>
+        <div class="textoabout">
+            <h1> Was finden Sie im Pesetas</h1>
+
+            <p>Erfahren Sie den authentischen Geschmack und verbringen Sie einen wunderschönen
+                Moment in unserem liebevoll eingerichteten Restaurant. <br> <br>
+                Genießen Sie unsere traditionell zubereitete Paella oder kleine Tapas im Genuß mit unseren vollmundigen
+                spanischen Weinen,
+                der traditionell zubereiteten Sangria oder einem eisgekühlten Bier.
+            </p>
+            <br>
+            <p>
+                Sie können Montags bis Samstags von 17:00 bis "Open End" auch leckeres
+aus der Pesetas Küche zum abholen bestellen.
+            </p>
+            <br>
+            <p>
+                Alle weiteren aktuellen News oder Informationen werden auch immer auf unser social media
+                finden.
+            </p>
+            <br>
+            <p>
+                ¡Hasta pronto!
+            </p>
+        </div>
+
+    </div>
+
+    <div class="borderline">
+        <img src="assets/img/Pngtreeblack_line_border_8053699.png" alt="borderLine">
     </div>
 
     <main id="Bilder">
@@ -65,61 +97,60 @@
                 </label>
     </main>
 
-    <div class="aktuelles" id="Aktuelles">
-        <h1>Aktuelles</h1>
+    <div class="borderline">
+        <img src="assets/img/Pngtreeblack_line_border_8053699.png" alt="borderLine">
+    </div>
 
-        <p>Liebe Gäste,
-            Sie koennen Montags bis Samstags von 17:00 bis "Open End" auch leckeres <br>
-            aus der Pesetas Küche zum abholen bestellen. Telefonisch vorbestellen <a href="tel:843 191 61">843 191
-                61</a><br>
-            oder einfach vorbei schauen und etwas Wartezeit mitbringen =). <br>
-            Alle weiteren aktuellen News oder Informationen werden auch immer auf unser Facebook-Seite aktualisiert:</p>
-        <a href="https://www.facebook.com/restaurantpesetas" target="_blank">Zu unserer Facebook-Seite </a>
-
-
-        <div class="formular" id="Reservierung">
+    <div class="formular" id="Reservierung">
+        <div class="formtext">
+            <h1>Reservierung</h1>
+            <p>sichern sie ein platz</p>
+            <br>
+            <h2>Offnungszeiten</h2>
+            <p>Mo - Sa von 17:00 bis "Open End"</p>
+        </div>
+        <div class="form">
             <form action="">
-                <h1>Reservierung</h1>
-                <br>
-                <p>Bitte füllen Sie alle Felder vollständig aus.</p>
+                <h2>Bitte füllen Sie alle Felder vollständig aus</h2>
                 <br>
                 <input type="text" placeholder="Name" required>
-                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Telefon" required>
-                <br>
+                <input type="tel" name="phone" placeholder="Telefon" required>
+                <br><br>
                 <select name="place">
                     <option value="Pesetas - Under Den Eichen">Pesetas - Under Den Eichen</option>
                 </select>
                 <input type="email" placeholder="Email" required>
+                <br><br>
+                <textarea name="" id="" cols="47" rows="10" placeholder="Personenanzahl/Datum"></textarea>
                 <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Personenanzahl/Datum"></textarea>
-                <br>
-                <button type="submit"> Reservieren</button>
+                <button type="submit", class="button type4"> Reservieren</button>
             </form>
         </div>
+    </div>
 
 
-        <footer class="footer" id="Kontakt">
-            <div class="footer_content">
-                <div class="footer__addr">
-                    <img src="assets\img\logodepesetas.png" alt="Logo de Pesetas" width="130" />
+    <footer class="footer" id="Kontakt">
+        <div class="footer_content">
+            <div class="footer__addr">
+                <img src="assets\img\logodepesetas.png" alt="Logo de Pesetas" width="130" />
 
-                    <h2>Kontakt</h2>
+                <h2>Kontakt</h2>
 
-                    <address> Unter den Eichen 112a, Berlin 12203<br>
+                <address> Unter den Eichen 112a, Berlin 12203<br>
 
-                        <a class="footer__btn" href="mailto:info@pesetas-restaurant.de">Email Us</a>
-                    </address>
-                </div>
+                    <a class="footer__btn" href="mailto:info@pesetas-restaurant.de">Email Us</a>
+                </address>
+            </div>
 
-                <div class="legal">
-                    <p>DATENSCHUTZ UND IMPRESSUM</p>
+            <div class="legal">
+                <p>DATENSCHUTZ UND IMPRESSUM</p>
 
-                    <div class="legal__links">
-                        <span>Made by Daniel Adrian Ramos Camargo</span>
-                    </div>
+                <div class="legal__links">
+                    <span>Made by Daniel Adrian Ramos Camargo</span>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 

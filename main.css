@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Source+Serif+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Open Sans';
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
@@ -11,26 +16,39 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
-}
-
-.nav {
-    background-image: url(assets/img/background.jpg);
+    background: url(assets/img/1.jpg) no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+}
+
+.willkommen {
+    position: relative;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+.willkommen::before{
+    content: "";
+    background-image: url(assets/img/background.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.74;
 }
 
 nav {
     display: flex;
-    justify-content: end;
-    backdrop-filter: blur(5px);
+    justify-content: center;
 }
 
 .logo img {
+    margin-top: 25PX;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -52,78 +70,146 @@ ul li a:hover {
     color: orange;
 }
 
-.willkommen {
-    height: 50%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
-    justify-content: center;
-    background-image: url(assets/img/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .willkommen h1 {
+    padding-top: 50px;
     align-items: center;
-    font-size: 75px;
+    font-size: 65px;
     color: goldenrod;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Rowdies', cursive;
+    ;
 }
 
-.contentwill{
+.contentwill {
+    padding-top: 25px;
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
 }
 
 .willkommen p {
-    margin-top: 20px;
+    margin-top: 30px;
     align-items: center;
     font-size: 25px;
     color: goldenrod;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 0.5px 0.5px 1px black;
+    font-family: 'Rowdies', cursive;
 }
 
 .willkommen button {
-    margin-top: 100px;
-    align-items: center;
-    font-size: 25px;
-    border: 3px goldenrod solid;
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
     background-color: transparent;
-    color: white;
-    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    outline: none;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.aktuelles {
-    height: 35%;
+.button.type3 {
+    color: goldenrod;
+    text-shadow: 0.25px 0.25px 0.5px white;
+}
+
+.button.type3.type3::after,
+.button.type3.type3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.button.type3.type3::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: goldenrod;
+    border-right-color: goldenrod;
+}
+
+.button.type3.type3::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: goldenrod;
+    border-left-color: goldenrod;
+}
+
+.button.type3.type3:hover:after,
+.button.type3.type3:hover:before {
+    border-bottom-color: goldenrod;
+    border-right-color: goldenrod;
+    border-top-color: goldenrod;
+    border-left-color: goldenrod;
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: white;
-    text-align: center;
+    height: 100%;
 }
 
-.aktuelles h1 {
+.about {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding-left: 150px;
+    padding-right: 25px;
 }
 
+.imgabout {
+    margin-top: 70px;
+    padding-left: 25px;
+    margin-bottom: 50px;
+}
 
+.imgabout img {
+    border-radius: 5%;
+}
 
+.textoabout {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+.textoabout h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px black solid;
+    width: 450px;
+}
+
+.textoabout p {
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.borderline {
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.borderline img {
+    height: 150px;
+    width: 40%;
+}
 
 main {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
     font-family: 'DM Sans', sans-serif;
     transition: background .4s ease-in;
-
 }
 
 .containerbilder h1 {
@@ -195,25 +281,159 @@ input[type=radio] {
     z-index: 1;
 }
 
-
-.formular {
-    height: 150%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+.aktuelles {
+    height: 20%;
+    width: 100%;
     text-align: center;
-    margin-bottom: 5px;
+}
+
+.aktuelles h1 {
+    align-items: center;
+}
+
+.aktuelles p {
+    margin-top: 30px;
 }
 
 
+.formular {
+    height: 55%;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(assets/img/pngwing.com.png);
+    background-size: cover;
+
+}
+
+.formtext {
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.formtext h1 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.formtext p {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.form{
+    margin-top: 70px;
+    margin-right: 340px;
+}
+
+.form input {
+    height: 30px;
+    background-color: transparent;
+    border: transparent;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+::placeholder{
+    color: black;
+}
+
+.form select {
+    height: 30px;
+    background-color: transparent;
+    border: transparent;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+.form textarea {
+    background-color: transparent;
+    height: 150px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+.form button {
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.button.type4 {
+    color: black;
+}
+
+.button.type4.type4::after,
+.button.type4.type4::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.button.type4.type4::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: black;
+    border-right-color: black;
+}
+
+.button.type4.type4::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: black;
+    border-left-color: black;
+}
+
+.button.type4.type4:hover:after,
+.button.type4.type4:hover:before {
+    border-bottom-color: black;
+    border-right-color: black;
+    border-top-color: black;
+    border-left-color: black;
+    width: 100%;
+    height: 100%;
+}
+
 .footer {
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     color: white;
     margin-bottom: 0;
+}
+
+.footer::before{
+    content: "";
     background-image: url(assets/img/background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.74;
 }
 
 .footer_content {
@@ -256,7 +476,6 @@ input[type=radio] {
     justify-content: center;
     height: 36px;
     max-width: max-content;
-    background-color: grey;
     border-radius: 100px;
     color: white;
     line-height: 0;
