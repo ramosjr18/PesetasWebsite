@@ -20,11 +20,13 @@
                     <div class="idioma">
                         <ul>
                             <li><a href=""><img src="assets/img/alemania.png" alt="">
-                                <ul>
-                                    <li><a href="assets/es/espanol.html"><img src="assets/img/espana.png" alt=""></a></li>
-                                    <li><a href="assets/en/english.html"><img src="assets/img/reino-unido.png" alt=""></a></li>
-                                </ul>
-                            </a></li>
+                                    <ul>
+                                        <li><a href="assets/es/espanol.html"><img src="assets/img/espana.png"
+                                                    alt=""></a></li>
+                                        <li><a href="assets/en/english.html"><img src="assets/img/reino-unido.png"
+                                                    alt=""></a></li>
+                                    </ul>
+                                </a></li>
                         </ul>
                     </div>
                     <div class="list_nav">
@@ -37,7 +39,8 @@
                     </div>
                     <div class="login">
                         <ul>
-                            <li><a href="assets/pag/login.html"><img class="InocoLogin" src="assets/img/camarero.png" alt=""></a></li>
+                            <li><a href="assets/pag/login.php"><img class="InocoLogin" src="assets/img/camarero.png"
+                                        alt=""></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -49,8 +52,10 @@
             </div>
             <p>Tauchen Sie ein in ein kleines Stück Spanien in Berlin </p>
 
-            <button class="button type3"><a href="assets/descargas/menue_2020.pdf" target="_blank">Speise und Getränkekarte</a></button>
-            <button class="button type3"><a href="http://pesetas-restaurant.de/content/downloads/catering.pdf" download>Catering Angebot</a></button>
+            <button class="button type3"><a href="assets/descargas/menue_2020.pdf" target="_blank">Speise und
+                    Getränkekarte</a></button>
+            <button class="button type3"><a href="http://pesetas-restaurant.de/content/downloads/catering.pdf"
+                    download>Catering Angebot</a></button>
         </div>
 
     </div>
@@ -97,8 +102,6 @@
             <input type="radio" name="slider" id="item-1" checked>
             <input type="radio" name="slider" id="item-2">
             <input type="radio" name="slider" id="item-3">
-            <input type="radio" name="slider" id="item-4">
-            <input type="radio" name="slider" id="item-5">
             <div class="imgcards">
                 <label class="imgcard" for="item-1" id="song-1">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbHXvjcR3gMAgnp-ElLaABqECnUDC853I3grSJFrYD0sAh0jfzv2Ipvwrz-Tkx3MF-xs&usqp=CAU"
@@ -109,7 +112,7 @@
                         alt="Imagen de Comida">
                 </label>
                 <label class="imgcard" for="item-3" id="song-3">
-                    <img src="http://pesetas-restaurant.de/content/bilder/01.jpg" alt="Imagen de Comida">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbHXvjcR3gMAgnp-ElLaABqECnUDC853I3grSJFrYD0sAh0jfzv2Ipvwrz-Tkx3MF-xs&usqp=CAU" alt="Imagen de Comida">
                 </label>
     </main>
 
@@ -118,8 +121,9 @@
     </div>
 
     <div class="map" id="Lage">
-        <div class="mapouter"><h1>Lage</h1>
-            <div class="gmap_canvas"> 
+        <div class="mapouter">
+            <h1>Lage</h1>
+            <div class="gmap_canvas">
                 <iframe width="100%" height="100%" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Pesetas%20Unter%20den%20Eichen%20112A,%2012203%20Berlin,%20Alemania&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -150,42 +154,44 @@
             <p>Mo - Sa von 17:00 bis "Open End"</p>
         </div>
         <div class="form">
-            <form action="mailto:ramosdrac-18@outlook.com" method="post" enctype="text/plain">
+            <form action="php/reservations.php" method="post">
                 <h2>Bitte füllen Sie alle Felder vollständig aus</h2>
-                <input class="namePhone" type="text" name="Nombre " placeholder="Name" required>
-                <input class="namePhone" type="tel" name="Telefono " placeholder="Telefon" required>
+                <input class="namePhone" type="text" name="name" placeholder="Name" required>
+                <input class="namePhone" type="tel" name="telefono" placeholder="Telefon" required>
                 <br>
-                <input type="date" value="2023-01-25" />
-                <input type="email" placeholder="Email" required>
+                <input type="date" name="date" min="17:00" max="21:00" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <br><br>
-                <select name="place ">
+                <select name="place">
                     <option value="Pesetas - Under Den Eichen">Pesetas - Under Den Eichen</option>
                 </select>
-                <select name="Mesa ">
+                <select name="table-number">
                     <option value="">Wählen Sie ein Tisch</option>
-                    <option value="mesa 1">Tisch 1</option>
-                    <option value="mesa 2">Tisch 2</option>
-                    <option value="mesa 3">Tisch 3</option>
-                    <option value="mesa 4">Tisch 4</option>
-                    <option value="mesa 5">Tisch 5</option>
-                    <option value="mesa 6">Tisch 6</option>
-                    <option value="mesa 7">Tisch 7</option>
-                    <option value="mesa 8">Tisch 8</option>
-                    <option value="mesa 9">Tisch 9</option>
-                    <option value="mesa 10">Tisch 10</option>
-                    <option value="mesa 11">Tisch 11</option>
-                    <option value="mesa 12">Tisch 12</option>
-                    <option value="mesa 13">Tisch 13</option>
-                    <option value="mesa 14">Tisch 14</option>
-                    <option value="mesa 15">Tisch 15</option>
-                    <option value="mesa 20">Tisch 20</option>
-                    <option value="mesa 80">Tisch 80</option>
+                    <option value="1">Tisch 1</option>
+                    <option value="2">Tisch 2</option>
+                    <option value="3">Tisch 3</option>
+                    <option value="4">Tisch 4</option>
+                    <option value="5">Tisch 5</option>
+                    <option value="6">Tisch 6</option>
+                    <option value="7">Tisch 7</option>
+                    <option value="8">Tisch 8</option>
+                    <option value="9">Tisch 9</option>
+                    <option value="10">Tisch 10</option>
+                    <option value="11">Tisch 11</option>
+                    <option value="12">Tisch 12</option>
+                    <option value="13">Tisch 13</option>
+                    <option value="14">Tisch 14</option>
+                    <option value="15">Tisch 15</option>
+                    <option value="20">Tisch 20</option>
+                    <option value="80">Tisch 80</option>
                 </select>
                 <br>
-                <label for="appt">UhrZeit</label>
-                <input type="time" id="appt" name="appt" min="17:00" max="21:00" required>
+                <label for="time">UhrZeit:</label>
+                <input type="time" id="time" name="time" min="17:00" max="21:00" required>
+                <label for="party-size">Party size:</label>
+                <input type="number" id="party-size" name="party-size" min="1" max="20" required placeholder="1-10">
                 <br> <br>
-                <textarea name="Mensaje " id="" cols="47" rows="10" placeholder="Kommentar"></textarea>
+                <textarea name="notes" id="" cols="47" rows="10" placeholder="Kommentar"></textarea>
                 <br>
                 <button type="submit" , class="button type4"> Reservieren</button>
             </form>
@@ -213,8 +219,9 @@
                     <span>Made by Daniel Adrian Ramos Camargo</span>
                 </div>
             </div>
-            <a href="https://www.flaticon.es/"  target="_blank" title="españa iconos">España iconos creados por Freepik - Flaticon</a> <br>
-            <a href="http://emanuelgsouza.dev" target="_blank">EmanuelG</a>
+            <a href="https://www.flaticon.es/" target="_blank" title="españa iconos">Iconos Creados por Freepik -
+                Flaticon</a> <br>
+            <a href="http://emanuelgsouza.dev" target="_blank">Boton Creado por EmanuelG</a>
         </div>
     </footer>
 
