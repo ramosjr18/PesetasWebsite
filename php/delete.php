@@ -17,7 +17,7 @@ if (isset($_GET['id'])) {
         // Check if the deletion was successful
         if ($result) {
             echo "Reservation deleted successfully.";
-            header('location: view-reservations.php');
+            header('location: ../assets/pag/adminpanel.php');
         } else {
             echo "Error deleting reservation: " . $db->error;
         }
