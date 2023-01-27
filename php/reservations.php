@@ -10,6 +10,7 @@ if ($conn->connect_error) {
 // Get the form data
 $name = $_POST['name'];
 $email = $_POST['email'];
+$telefono = $_POST['telefono'];
 $date = $_POST['date'];
 $time = $_POST['time'];
 $party_size = $_POST['party-size'];
@@ -28,8 +29,8 @@ if ($result->num_rows > 0) {
 </script>";
 } else {
     // Si la mesa está disponible, insertar reserva en la base de datos
-    $sql = "INSERT INTO reservations (name, email, date, time, party_size, mesa, notes, status)
-    VALUES ('$name', '$email', '$date', '$time', '$party_size', '$table','$notes', 'Pendiente')";
+    $sql = "INSERT INTO reservations (name, email, telefono, date, time, party_size, mesa, notes, status)
+    VALUES ('$name', '$email','$telefono', '$date', '$time', '$party_size', '$table','$notes', 'Pendiente')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<script>
