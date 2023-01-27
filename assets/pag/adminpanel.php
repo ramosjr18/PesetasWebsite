@@ -60,11 +60,11 @@ if (!isset($_SESSION['Usuario'])) {
                         echo "<td>" . $row['party_size'] . "</td>";
                         echo "<td>" . $row['mesa'] . "</td>";
                         echo "<td>" . $row['notes'] . "</td>";
-                        echo "<td>" . $row['status'] . "</td>";
-                        echo "<td> <a href='edit.php?id=" . $row['id'] . "'>Edit</a></td>";
-                        echo "<td> <a href='delete.php?id=" . $row['id'] . "'>Delete</a></td>";
+                        echo "<td class='status'>" . $row['status'] . "</td>";
+                        echo "<td> <a href='../../php/edit.php?id=" . $row['id'] . "'>Edit</a></td>";
+                        echo "<td> <a href='../../php/delete.php?id=" . $row['id'] . "'>Delete</a></td>";
                         echo "<td> <a href='confirm.php?id=" . $row['id'] . "'>Cambiar Estado</a></td>";
-                        echo "<td> <a href='mailto:" . $row['email'] . "?subject=Confirmation of Reservation&body=Dear ". $row['name'] . ",%0D%0A%0D%0AThank you for your reservation at our restaurant. We are looking forward to your visit on ". $row['date'] . " at " . $row['time'] . ". Your party size is " . $row['party_size'] . " and your table is number ". $row['mesa'] . ".%0D%0A%0D%0AIf you have any notes or special requests, please let us know.%0D%0A%0D%0AThank you again for choosing our restaurant.%0D%0A%0D%0ABest regards,%0D%0ARestaurant Team%0D%0A%0D%0A----------------German Version---------------%0D%0A%0D%0ASehr geehrte/r " . $row['name'] . ",%0D%0A%0D%0AVielen Dank, dass Sie bei uns eine Reservierung vorgenommen haben. Wir freuen uns auf Ihren Besuch am "
+                        echo "<td> <a href='mailto:" . $row['email'] . "?subject=Confirmation of Reservation&body=Dear " . $row['name'] . ",%0D%0A%0D%0AThank you for your reservation at our restaurant. We are looking forward to your visit on " . $row['date'] . " at " . $row['time'] . ". Your party size is " . $row['party_size'] . " and your table is number " . $row['mesa'] . ".%0D%0A%0D%0AIf you have any notes or special requests, please let us know.%0D%0A%0D%0AThank you again for choosing our restaurant.%0D%0A%0D%0ABest regards,%0D%0ARestaurant Team%0D%0A%0D%0A----------------German Version---------------%0D%0A%0D%0ASehr geehrte/r " . $row['name'] . ",%0D%0A%0D%0AVielen Dank, dass Sie bei uns eine Reservierung vorgenommen haben. Wir freuen uns auf Ihren Besuch am "
                             . $row['date'] . " um " . $row['time'] . ". Ihre Gruppengröße beträgt " . $row['party_size'] . " und Ihr Tisch ist Nummer "
                             . $row['mesa'] . ".%0D%0A%0D%0AFalls Sie Anmerkungen oder besondere Wünsche haben, lassen Sie es uns bitte wissen.
                          %0D%0A%0D%0AVielen Dank noch einmal, dass Sie uns gewählt haben.%0D%0A%0D%0AViele Grüße,%0D%0ARestaurant Team%0D%0A%0D%0A----------------Spanish Version---------------
@@ -80,6 +80,18 @@ if (!isset($_SESSION['Usuario'])) {
                     echo "</table>";
                     ?>
                 </table>
+                <script>
+                    var statuses = document.getElementsByClassName("status");
+                    for (var i = 0; i < statuses.length; i++) {
+                        if (statuses[i].innerHTML === "Confirmado") {
+                            statuses[i].style.backgroundColor = "green";
+                            statuses[i].style.color = "white";
+                        } else {
+                            statuses[i].style.backgroundColor = "red";
+                            statuses[i].style.color = "white";
+                        }
+                    }
+                </script>
             </div>
 
         </main>
