@@ -41,7 +41,7 @@ require '../../php/connection_db.php';
                     </div>
                     <div class="login">
                         <ul>
-                            <li><a href="../pag/login.html"><img class="InocoLogin" src="../img/camarero.png" alt=""></a></li>
+                            <li><a href="../pag/login.php"><img class="InocoLogin" src="../img/camarero.png" alt=""></a></li>
                         </ul>
                     </div>
                 </nav>
