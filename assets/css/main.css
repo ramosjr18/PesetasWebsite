@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans';
+    font-family: 'Rowdies', cursive;
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background: url(../img/1.jpg) no-repeat center center fixed;
+    background: url(../img/berlinbg.jpeg) no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -35,6 +35,8 @@ body {
     background-image: url(../img/partetraserapesetasssss.jpg);
     background-size: cover;
     position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.445);
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -50,22 +52,22 @@ nav {
     justify-content: space-between;
 }
 
-.idioma > li{
+.idioma>li {
     float: left;
 }
 
 .idioma li a {
-    display:block;
+    display: block;
 }
 
 
 .idioma li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
 }
 
-.idioma li:hover > ul {
+.idioma li:hover>ul {
     display: block;
 }
 
@@ -113,7 +115,6 @@ ul li a img {
     color: goldenrod;
     text-shadow: 1px 1px 2px black;
     font-family: 'Rowdies', cursive;
-    ;
 }
 
 .contentwill {
@@ -144,7 +145,8 @@ ul li a img {
 }
 
 .button.type3 a {
-    text-decoration: none;color: goldenrod;
+    text-decoration: none;
+    color: goldenrod;
     text-shadow: 0.25px 0.25px 0.5px white;
 }
 
@@ -193,6 +195,7 @@ ul li a img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding-left: 150px;
     padding-right: 25px;
 }
@@ -222,6 +225,7 @@ ul li a img {
 .textoabout p {
     margin-bottom: 0px;
     font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(175, 174, 174);
     font-weight: 500;
 }
 
@@ -341,37 +345,38 @@ input[type=radio] {
     margin-top: 2%;
 }
 
-.Planos{
+.Planos {
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.frenteplano{
+.frenteplano {
     display: inline;
     margin-left: 9%;
 }
 
-.frenteplano img{
+.frenteplano img {
     width: 40%;
 }
 
-.traseroplano{
+.traseroplano {
     display: inline;
 }
 
-.traseroplano img{
+.traseroplano img {
     width: 40%;
     height: 49.7%;
 }
 
 
 .formular {
-    height: 60%;
+    height: 65%;
     width: 90%;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/libro.png);
+    /* background-image: url(../img/libro.png); */
+    background-color: rgba(240, 248, 255, 0.432);
     background-size: cover;
     margin-left: 5%;
 }
@@ -500,6 +505,8 @@ input[type=radio] {
     background-image: url(../img/partetraserapesetasssss.jpg);
     background-size: cover;
     position: absolute;
+    border-radius: 8px;
+    box-shadow: 8px 0px 8px 8px rgba(0, 0, 0, 0.541);
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -541,18 +548,27 @@ input[type=radio] {
     color: #999;
 }
 
-.footer__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    max-width: max-content;
-    border-radius: 100px;
+.buttonc {
+    background-color: white;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.buttonc a {
+    color: #999;
+}
+
+.buttonc:hover {
+    background-color: #999;
+}
+
+.footer__btn:hover {
     color: white;
-    line-height: 0;
-    margin: 0.6em 0;
-    font-size: 1rem;
-    padding: 0 1.3em;
 }
 
 .footer ul {
@@ -563,6 +579,7 @@ input[type=radio] {
 
 .footer a {
     text-decoration: none;
+    color: black;
 }
 
 .footer__nav {
@@ -584,21 +601,450 @@ input[type=radio] {
 .legal {
     display: flex;
     flex-wrap: wrap;
-    color: #999;
+    color: rgba(20, 20, 20, 0.89);
+    text-shadow: 1px 1px 2px rgb(175, 174, 174);
 }
 
 .legal__links {
-    display: flex;
+    display: inline;
     align-items: center;
+    color: rgba(20, 20, 20, 0.89);
+    text-shadow: 1px 1px 2px rgb(175, 174, 174);
 }
 
-
-@media screen and (min-width: 24.375em) {
-    .legal .legal__links {
-        margin-left: auto;
-    }
+.legal__links a {
+    color: rgba(20, 20, 20, 0.89);
+    font-size: 15px;
 }
 
 .footer__addr {
     flex: 1 0px;
+}
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+@media screen and (max-width: 1078px) {
+    .willkommen {
+        height: 65%;
+        width: 100%;
+    }
+
+    .about {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .mapouter{
+        width: 100%;
+    }
+
+    .formular {
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .willkommen {
+        height: 44%;
+        width: 100%;
+    }
+
+    ul li {
+        padding: 3px;
+    }
+    
+    ul li a {
+        font-size: 15px;
+    }
+
+    .willkommen h1 {
+        font-size: 45px; 
+    }
+
+    .willkommen p {
+        font-size: 18px; 
+    }
+
+    .willkommen button {
+        font-size: 18px;
+    }
+
+    .about {
+        padding: 5px 5px;
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+    .textoabout {
+        padding: 0 0 0 10px;
+        text-align: center;
+    }
+
+    .textoabout h1 {
+        padding: 10px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        margin-left: 160px;
+        font-size: 35px;
+    }
+
+    .textoabout p {
+        font-size: 20px;
+    }
+
+    .mapouter{
+        width: 100%;
+    }
+
+    .Planos{
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .frenteplano{
+        width: 48%;
+    }
+
+    .traseroplano{
+        width: 48%;
+    }
+
+    .frenteplano img{
+        height: 456px;
+        width: 656px;
+        margin-right: 50px;
+    }
+
+    .traseroplano img{
+        height: 456px;
+        width: 656px;
+    }
+
+    .formular {
+        height: 70%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .form{
+        margin: 0;
+        padding: 5%;
+    }
+
+    .formtext{
+        padding: 2%;
+        margin: 0;
+        margin-top: 25%;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .willkommen {
+        height: 66%;
+        width: 100%;
+    }
+
+    .about {
+        padding: 5px 5px;
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+    .textoabout {
+        padding: 0 0 0 0px;
+        text-align: center;
+    }
+
+    .textoabout h1 {
+        padding: 10px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        font-size: 35px;
+    }
+
+    .textoabout p {
+        font-size: 20px;
+    }
+
+    .mapouter{
+        width: 100%;
+    }
+
+    .Planos{
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .frenteplano{
+        width: 48%;
+    }
+
+    .traseroplano{
+        width: 48%;
+    }
+
+    .frenteplano img{
+        height: 456px;
+        width: 75%;
+    }
+
+    .traseroplano img{
+        height: 456px;
+        width: 75%;
+    }
+
+    .formular {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        height: 108%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .form{
+        margin: 0;
+        padding: 1.5%;
+    }
+
+    .formtext{
+        padding: 2%;
+        margin: 0;
+        margin-top: 25%;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    .willkommen {
+        height: 58%;
+        width: 100%;
+    }
+
+    .about {
+        padding: 5px 5px;
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+    .textoabout {
+        padding: 0 0 0 0px;
+        text-align: center;
+    }
+
+    .textoabout h1 {
+        padding: 10px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        font-size: 35px;
+    }
+
+    .textoabout p {
+        font-size: 20px;
+    }
+
+    .mapouter{
+        width: 100%;
+    }
+
+    .Planos{
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .frenteplano{
+        width: 48%;
+    }
+
+    .traseroplano{
+        width: 48%;
+    }
+
+    .frenteplano img{
+        height: 456px;
+        width: 80%;
+        margin: 0;
+    }
+
+    .traseroplano img{
+        height: 456px;
+        width: 500px;
+    }
+
+    .formular {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        height: 106%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .form{
+        margin: 0;
+        padding: 1.5%;
+    }
+
+    .formtext{
+        padding: 2%;
+        margin: 0;
+        margin-top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 230px) {
+    .willkommen {
+        height: 92%;
+        width: 230px;
+    }
+    .willkommen h1{
+        font-size: 40px;
+    }
+
+    .contentwill button{
+        font-size: 15px;
+    }
+
+    .about {
+        padding: 5px 5px;
+        width: 230px;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .imgabout {
+        padding: 0;
+    }
+
+
+    .imgabout img{
+        width: 80%;
+        padding: 0;
+    }
+
+    .textoabout {
+        padding: 0 0 0 0px;
+        text-align: center;
+    }
+
+    .textoabout h1 {
+        width: 230px;
+        margin: 0;
+        font-size: 22px;
+        text-shadow: 1px 1px 2px black;
+        border-bottom: 0;
+    }
+
+    .textoabout p {
+        font-size: 20px;
+    }
+
+    .mapouter{
+        width: 100%;
+    }
+
+    .Planos{
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .frenteplano{
+        width: 48%;
+    }
+
+    .traseroplano{
+        width: 48%;
+    }
+
+    .frenteplano img{
+        height: 200px;
+        width: 80%;
+        margin: 0;
+        margin-left: -20px;
+    }
+
+    .traseroplano img{
+        height: 200px;
+        width: 100%;
+    }
+
+
+    .formular {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        height: 190%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .form{
+        margin: 0;
+        padding: 1.5%;
+    }
+
+    .form input{
+        width: 200px;
+    }
+
+    .form select{
+        width: 200px;
+    }
+
+    .formtext{
+        padding: 2%;
+        margin: 0;
+        margin-top: 25%;
+    }
+
+    .formtext h1{
+        font-size: 30px;
+    }
+
+
 }

@@ -4,5 +4,5 @@
     // if($conn){
     //     echo 'Connection was Succesfull';
     // } else{
-    //     echo 'No Connected';
+    //     echo 'Not Connected';
     // }
