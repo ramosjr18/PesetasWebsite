@@ -55,7 +55,7 @@ require '../../php/connection_db.php';
 
             <button class="button type3"><a href="assets/descargas/" download="menue_2020.pdf">Menú de comida y
                     bebida</a></button>
-            <button class="button type3"><a href="http://pesetas-restaurant.de/content/downloads/catering.pdf" download>Servicio de Catering</a></button>
+            <button class="button type3"><a href="assets/descargas/" download="catering.pdf">Servicio de Catering</a></button>
         </div>
 
     </div>

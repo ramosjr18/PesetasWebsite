@@ -54,7 +54,7 @@ require '../../php/connection_db.php';
             <p>Immerse yourself in a little piece of Spain in Berlin</p>
 
             <button class="button type3"><a href="assets/descargas/" download="menue_2020.pdf">Menu</a></button>
-            <button class="button type3"><a href="http://pesetas-restaurant.de/content/downloads/catering.pdf" download>Catering Service</a></button>
+            <button class="button type3"><a href="assets/descargas/" download="catering.pdf">Catering Service</a></button>
         </div>
 
     </div>

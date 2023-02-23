@@ -55,7 +55,7 @@ require 'php/connection_db.php';
 
             <button class="button type3"><a href="assets/descargas/menue_2020.pdf" target="_blank">Speise und
                     Getränkekarte</a></button>
-            <button class="button type3"><a href="http://pesetas-restaurant.de/content/downloads/catering.pdf" download>Catering Angebot</a></button>
+            <button class="button type3"><a href="assets/descargas/" download="catering.pdf">Catering Angebot</a></button>
         </div>
 
     </div>
