@@ -113,3 +113,24 @@ body {
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width: 630px)  {   
+    .Login{
+        width: 80%;
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 530px)  {   
+    .Login{
+        width: 80%;
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 230px)  {   
+    .Login{
+        width: 80%;
+        height: 70%;
+    }
+}

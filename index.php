@@ -1,3 +1,7 @@
+<?php
+require 'php/connection_db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -21,10 +25,8 @@
                         <ul>
                             <li><a href=""><img src="assets/img/alemania.png" alt="">
                                     <ul>
-                                        <li><a href="assets/es/espanol.html"><img src="assets/img/espana.png"
-                                                    alt=""></a></li>
-                                        <li><a href="assets/en/english.html"><img src="assets/img/reino-unido.png"
-                                                    alt=""></a></li>
+                                        <li><a href="assets/es/espanol.php"><img src="assets/img/espana.png" alt=""></a></li>
+                                        <li><a href="assets/en/english.php"><img src="assets/img/reino-unido.png" alt=""></a></li>
                                     </ul>
                                 </a></li>
                         </ul>
@@ -39,8 +41,7 @@
                     </div>
                     <div class="login">
                         <ul>
-                            <li><a href="assets/pag/login.php"><img class="InocoLogin" src="assets/img/camarero.png"
-                                        alt=""></a></li>
+                            <li><a href="assets/pag/login.php"><img class="InocoLogin" src="assets/img/camarero.png" alt=""></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -54,8 +55,7 @@
 
             <button class="button type3"><a href="assets/descargas/menue_2020.pdf" target="_blank">Speise und
                     Getränkekarte</a></button>
-            <button class="button type3"><a href="http://pesetas-restaurant.de/content/downloads/catering.pdf"
-                    download>Catering Angebot</a></button>
+            <button class="button type3"><a href="assets/descargas/" download="catering.pdf">Catering Angebot</a></button>
         </div>
 
     </div>
@@ -104,12 +104,10 @@
             <input type="radio" name="slider" id="item-3">
             <div class="imgcards">
                 <label class="imgcard" for="item-1" id="song-1">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbHXvjcR3gMAgnp-ElLaABqECnUDC853I3grSJFrYD0sAh0jfzv2Ipvwrz-Tkx3MF-xs&usqp=CAU"
-                        alt="Imagen de Comida">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbHXvjcR3gMAgnp-ElLaABqECnUDC853I3grSJFrYD0sAh0jfzv2Ipvwrz-Tkx3MF-xs&usqp=CAU" alt="Imagen de Comida">
                 </label>
                 <label class="imgcard" for="item-2" id="song-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPymZaI_WjBVi-esqKfivm9kwX7ogNJAG-HFGjohjhhCpdJNgwYrIYNKC-LWWyxGv0xQ&usqp=CAU"
-                        alt="Imagen de Comida">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPymZaI_WjBVi-esqKfivm9kwX7ogNJAG-HFGjohjhhCpdJNgwYrIYNKC-LWWyxGv0xQ&usqp=CAU" alt="Imagen de Comida">
                 </label>
                 <label class="imgcard" for="item-3" id="song-3">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbHXvjcR3gMAgnp-ElLaABqECnUDC853I3grSJFrYD0sAh0jfzv2Ipvwrz-Tkx3MF-xs&usqp=CAU" alt="Imagen de Comida">
@@ -124,13 +122,12 @@
         <div class="mapouter">
             <h1>Lage</h1>
             <div class="gmap_canvas">
-                <iframe width="100%" height="100%" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=Pesetas%20Unter%20den%20Eichen%20112A,%2012203%20Berlin,%20Alemania&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Pesetas%20Unter%20den%20Eichen%20112A,%2012203%20Berlin,%20Alemania&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <br>
             </div>
         </div>
     </div>
+    <br>
 
     <div class="borderline">
         <img src="assets/img/Pngtreeblack_line_border_8053699.png" alt="borderLine">
@@ -141,7 +138,7 @@
             <img src="assets/img/planofrentePesetas.png" alt="Plano Frontal De Pesetas">
         </div>
         <div class="traseroplano">
-            <img src="assets/img/planoTraseroPesetas.png" alt="Plano Trasero De Pesetas">
+            <img src="assets/img/planoTraseroPesetas1.png" alt="Plano Trasero De Pesetas">
         </div>
     </div>
 
@@ -167,29 +164,24 @@
                 </select>
                 <select name="table-number">
                     <option value="">Wählen Sie ein Tisch</option>
-                    <option value="1">Tisch 1</option>
-                    <option value="2">Tisch 2</option>
-                    <option value="3">Tisch 3</option>
-                    <option value="4">Tisch 4</option>
-                    <option value="5">Tisch 5</option>
-                    <option value="6">Tisch 6</option>
-                    <option value="7">Tisch 7</option>
-                    <option value="8">Tisch 8</option>
-                    <option value="9">Tisch 9</option>
-                    <option value="10">Tisch 10</option>
-                    <option value="11">Tisch 11</option>
-                    <option value="12">Tisch 12</option>
-                    <option value="13">Tisch 13</option>
-                    <option value="14">Tisch 14</option>
-                    <option value="15">Tisch 15</option>
-                    <option value="20">Tisch 20</option>
-                    <option value="80">Tisch 80</option>
+                    <?php
+                    $date = $_GET['date'];  // Get the current date
+                    $query = "SELECT mesas.* FROM mesas LEFT JOIN reservations ON mesas.idmesa = reservations.idmesa AND reservations.date = '$date' WHERE reservations.idmesa IS NULL";
+                    //$query = "SELECT * FROM mesas";
+                    
+                    $result = mysqli_query($conn, $query);
+
+                    while ($values = mysqli_fetch_array($result)) {
+                        echo '<option value="' . $values['idmesa'] . '">Tisch ' . $values['mesa'] . '</option>';
+                        //echo $row['idmesa'] . " - " . $row['mesa'] . "<br>";
+                    }
+                    ?>
                 </select>
                 <br>
                 <label for="time">UhrZeit:</label>
                 <input type="time" id="time" name="time" min="17:00" max="21:00" required>
                 <label for="party-size">Party size:</label>
-                <input type="number" id="party-size" name="party-size" min="1" max="20" required placeholder="1-10">
+                <input type="number" id="party-size" name="party-size" min="1" max="20" required placeholder="1-20">
                 <br> <br>
                 <textarea name="notes" id="" cols="47" rows="10" placeholder="Kommentar"></textarea>
                 <br>
@@ -197,7 +189,7 @@
             </form>
         </div>
     </div>
-
+    <br>
 
     <footer class="footer" id="Kontakt">
         <div class="footer_content">
@@ -206,22 +198,21 @@
 
                 <h2>Kontakt</h2>
 
-                <address> Unter den Eichen 112a, Berlin 12203<br>
-
-                    <a class="footer__btn" href="mailto:info@pesetas-restaurant.de">Email Us</a>
-                </address>
+                <address> Unter den Eichen 112a, Berlin 12203</address><br>
+                <button class="buttonc"><a class="footer__btn" href="mailto:info@pesetas-restaurant.de">Email Us</a></button>
+                <button class="buttonc"><a class="footer__btn" href="tel:030 84319161">Call Us</a></button>
             </div>
-
+            <br>
             <div class="legal">
                 <p>DATENSCHUTZ UND IMPRESSUM</p>
-
+                    
                 <div class="legal__links">
-                    <span>Made by Daniel Adrian Ramos Camargo</span>
+                    <span>Made by Daniel Adrian Ramos Camargo</span> <br>
+                    <a class="legal__links" href="https://www.flaticon.es/" target="_blank" title="españa iconos">Iconos Creados por Freepik - Flaticon</a> <br>
+                    <a class="legal__links" href="http://emanuelgsouza.dev" target="_blank">Boton Creado por EmanuelG</a>
                 </div>
             </div>
-            <a href="https://www.flaticon.es/" target="_blank" title="españa iconos">Iconos Creados por Freepik -
-                Flaticon</a> <br>
-            <a href="http://emanuelgsouza.dev" target="_blank">Boton Creado por EmanuelG</a>
+
         </div>
     </footer>
 

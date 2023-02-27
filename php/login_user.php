@@ -16,7 +16,7 @@
     } else{
         echo '<script>
             alert("User not found");
-            window.location = "../index.html";    
+            window.location = "../index.php";    
         </script>';
         exit;
     }
